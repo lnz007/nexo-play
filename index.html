@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d18">
+  <title>Nexo Play</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Nexo Play início"><span class="brand-mark">N</span><span>NEXO<span class="brand-light">PLAY</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <button class="nav-item active" data-page="home">Início</button>
+      <button class="nav-item" data-page="library">Biblioteca</button>
+      <button class="nav-item" data-page="media">Mídia</button>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="search-toggle" aria-label="Pesquisar" title="Pesquisar">⌕</button>
+      <button class="profile" id="profile-button" aria-label="Perfil">LF</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page active" id="page-home">
+      <div class="welcome-row"><div><p class="eyebrow">SUA CENTRAL DE ENTRETENIMENTO</p><h1>Boa noite<span class="blue-dot">.</span></h1><p class="muted">Escolha por onde quer começar.</p></div><div class="date-chip" id="today-label">NEXO OS · 01</div></div>
+      <article class="hero-card">
+        <div class="hero-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="hero-grid"></div><div class="hero-word">NEXO<br><b>PLAY</b></div></div>
+        <div class="hero-content"><span class="pill"><span class="live-dot"></span> DESTAQUE</span><h2>Seu próximo<br>nível começa aqui.</h2><p>Uma central para seus jogos, experiências e entretenimento.</p><button class="primary-btn" data-action="open-library">Explorar biblioteca <span>↗</span></button></div>
+        <div class="hero-index">01 <span>/</span> 04</div>
+      </article>
+
+      <section class="content-section">
+        <div class="section-heading"><div><p class="eyebrow">ACESSO RÁPIDO</p><h2>Continue de onde parou</h2></div><button class="text-btn" data-page="library">Ver biblioteca <span>→</span></button></div>
+        <div class="game-row" id="recent-games">
+          <button class="game-card game-cyan" data-game="orbit"><span class="game-tag">DEMO</span><span class="game-symbol">◉</span><span class="game-title">Orbit Runner</span><span class="game-subtitle">Arcade · Demonstração</span></button>
+          <button class="game-card game-violet" data-game="neon"><span class="game-tag">DEMO</span><span class="game-symbol">✳</span><span class="game-title">Neon Drift</span><span class="game-subtitle">Corrida · Demonstração</span></button>
+          <button class="game-card game-orange" data-game="pulse"><span class="game-tag">EM BREVE</span><span class="game-symbol">◇</span><span class="game-title">Pulse Sector</span><span class="game-subtitle">Ação · Conceito</span></button>
+          <button class="game-card game-green" data-game="void"><span class="game-tag">EM BREVE</span><span class="game-symbol">⌁</span><span class="game-title">Void Garden</span><span class="game-subtitle">Exploração · Conceito</span></button>
+        </div>
+      </section>
+      <section class="content-section feature-strip">
+        <div class="feature-icon">⌘</div><div><p class="eyebrow">CONTROLE NEXO</p><h3>Jogue do seu jeito</h3><p class="muted">Abra a demonstração interativa e teste os controles virtuais.</p></div><button class="secondary-btn" id="open-controller">Testar controles</button>
+      </section>
+    </section>
+
+    <section class="page" id="page-library">
+      <div class="page-heading"><div><p class="eyebrow">SEUS JOGOS</p><h1>Biblioteca<span class="blue-dot">.</span></h1><p class="muted">Seus jogos e experiências em um só lugar.</p></div><div class="library-count"><strong>04</strong><span>ITENS</span></div></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="demo">Demonstrações</button><button class="filter" data-filter="soon">Em breve</button></div>
+      <div class="library-grid">
+        <button class="library-card game-cyan" data-game="orbit" data-kind="demo"><span class="game-symbol">◉</span><span class="game-title">Orbit Runner</span><span class="game-subtitle">Arcade · Demo jogável</span><span class="launch-label">ABRIR DEMO ↗</span></button>
+        <button class="library-card game-violet" data-game="neon" data-kind="demo"><span class="game-symbol">✳</span><span class="game-title">Neon Drift</span><span class="game-subtitle">Corrida · Demo jogável</span><span class="launch-label">ABRIR DEMO ↗</span></button>
+        <button class="library-card game-orange" data-game="pulse" data-kind="soon"><span class="game-symbol">◇</span><span class="game-title">Pulse Sector</span><span class="game-subtitle">Ação · Conceito</span><span class="launch-label">EM BREVE</span></button>
+        <button class="library-card game-green" data-game="void" data-kind="soon"><span class="game-symbol">⌁</span><span class="game-title">Void Garden</span><span class="game-subtitle">Exploração · Conceito</span><span class="launch-label">EM BREVE</span></button>
+      </div>
+    </section>
+
+    <section class="page" id="page-media">
+      <div class="page-heading"><div><p class="eyebrow">ENTRETENIMENTO</p><h1>Mídia<span class="blue-dot">.</span></h1><p class="muted">Um espaço para organizar seus conteúdos.</p></div></div>
+      <div class="media-panel"><div class="media-symbol">♫</div><div><h2>Seu espaço de mídia</h2><p class="muted">Esta área é uma prévia visual. Integrações com serviços de música e vídeo ainda não estão conectadas.</p></div><span class="pill">EM DESENVOLVIMENTO</span></div>
+      <div class="media-note"><strong>O que vem depois</strong><p>Playlists, atalhos para serviços compatíveis e reprodução de arquivos locais autorizados.</p></div>
+    </section>
+  </main>
+
+  <footer class="bottom-bar"><span>© 2026 NEXO PLAY</span><span>CONCEITO WEB · V0.1</span><span class="connection"><i></i> SISTEMA PRONTO</span></footer>
+
+  <dialog id="game-dialog" class="game-dialog">
+    <div class="dialog-top"><div><p class="eyebrow">DEMO INTERATIVA</p><h2 id="game-name">Orbit Runner</h2></div><button class="close-btn" data-close="game-dialog" aria-label="Fechar">×</button></div>
+    <p class="muted dialog-description">Use as setas ou WASD, ou toque nos controles virtuais.</p>
+    <div class="game-stage" id="game-stage" tabindex="0" aria-label="Área da demonstração de jogo">
+      <div class="stage-stars"></div><div class="player" id="player">◆</div><div class="stage-hud"><span>DEMO / 01</span><span id="game-status">PRONTO</span></div>
+      <div class="stage-help">MOVA O NÚCLEO AZUL</div>
+    </div>
+    <div class="controller">
+      <div class="dpad" aria-label="Direcional">
+        <button class="pad up" data-control="up" aria-label="Cima">▲</button><button class="pad left" data-control="left" aria-label="Esquerda">◀</button><button class="pad center" disabled>✦</button><button class="pad right" data-control="right" aria-label="Direita">▶</button><button class="pad down" data-control="down" aria-label="Baixo">▼</button>
+      </div>
+      <div class="center-controls"><button class="small-control" data-control="select">SELECT</button><button class="ps-button" id="reset-game" aria-label="Reiniciar demonstração">N</button><button class="small-control" data-control="start">START</button></div>
+      <div class="face-buttons"><button class="face triangle" data-control="triangle" aria-label="Triângulo">△</button><button class="face square" data-control="square" aria-label="Quadrado">□</button><button class="face circle" data-control="circle" aria-label="Círculo">○</button><button class="face cross" data-control="cross" aria-label="X">×</button></div>
+    </div>
+    <div class="dialog-foot"><span>TECLADO: WASD / SETAS</span><span>CONTROLES: TOQUE OU CLIQUE</span></div>
+  </dialog>
+
+  <dialog id="search-dialog" class="search-dialog"><div class="dialog-top"><h2>Pesquisar</h2><button class="close-btn" data-close="search-dialog">×</button></div><input id="search-input" type="search" placeholder="Buscar jogos..." autocomplete="off"><p class="muted">Pesquise os títulos disponíveis na biblioteca.</p><div id="search-results"></div></dialog>
+  <dialog id="profile-dialog" class="search-dialog"><div class="dialog-top"><h2>Perfil</h2><button class="close-btn" data-close="profile-dialog">×</button></div><div class="profile-large">LF</div><h3>Jogador Nexo</h3><p class="muted">Perfil local de demonstração</p><div class="profile-stats"><span><b>04</b> itens</span><span><b>02</b> demos</span><span><b>V0.1</b> versão</span></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
